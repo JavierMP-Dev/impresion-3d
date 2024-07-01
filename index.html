@@ -44,10 +44,9 @@
                 <div class="articles">
                     <article>
                         <figure>
-                            <img
-                                src="img/tubo.jpg"
-                                alt="Preview"
-                            >
+                            <img src="img/tubo.jpg" alt="Imagen 1">
+                                   
+                            
                         </figure>
                         <div class="article-preview">
                             <h2>Llavero de tubo</h2>
@@ -211,13 +210,22 @@
 
                     <article>
                         <figure>
-                            <img
-                                src="img/keycaps.jpg"
-                                alt="Preview"
-                            >
+                            <div class="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="img/keycaps.jpg" alt="Imagen 1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/key.jpg" alt="Imagen 2">
+                                    </div>
+                                    
+                                </div>
+                                <a class="carousel-control prev" onclick="prevSlide()">&#10094;</a>
+                                <a class="carousel-control next" onclick="nextSlide()">&#10095;</a>
+                            </div>
                         </figure>
                         <div class="article-preview">
-                            <h2>Keycaps teclado/h2>
+                            <h2>Keycaps teclado</h2>
                             <p>
                             Keycaps compatibles con diferentes tipos de switch de teclado mecanico.  
                             </p>
@@ -281,7 +289,8 @@ method="POST"
 
 
 
-
+    <script src="carrousel.js"></script>
+    
     </body>
 </html>
 
