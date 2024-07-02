@@ -16,6 +16,20 @@ body {
 }
 
 /*header*/
+
+/*clase logo*/
+.logo_p{
+    width: 60px;
+    height: auto;
+    border-radius: 50%;
+}
+.page-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+
+}
 .header {
     display: flex;
     justify-content: space-between;
@@ -38,7 +52,7 @@ body {
 }
 
 .nav-buttons button {
-    background-color: #444;
+    background-color: #19cc9f;
     color: white;
     border: none;
     padding: 10px 20px;
