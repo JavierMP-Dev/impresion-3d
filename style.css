@@ -16,7 +16,6 @@ body {
 }
 
 /*header*/
-
 .header {
     display: flex;
     justify-content: space-between;
@@ -29,20 +28,13 @@ body {
 .menu-icon {
     cursor: pointer;
     font-size: 24px;
+    display: none; /* Oculto por defecto */
 }
 
 .nav-buttons {
-    display: none;
-    flex-direction: column;
-    overflow: hidden;
-    max-height: 0;
-    transition: max-height 0.5s ease-out;
-}
-
-.nav-buttons.show {
     display: flex;
-    max-height: 200px; /* Adjust this value as needed */
-    transition: max-height 0.5s ease-in;
+    flex-direction: row;
+    justify-content: flex-end;
 }
 
 .nav-buttons button {
@@ -50,9 +42,8 @@ body {
     color: white;
     border: none;
     padding: 10px 20px;
-    margin: 5px 0;
+    margin: 0 5px;
     cursor: pointer;
-    flex-grow: 1;
 }
 
 .nav-buttons button:hover {
@@ -61,19 +52,30 @@ body {
 
 /* Estilos para vista móvil */
 @media (max-width: 600px) {
+    .menu-icon {
+        display: block; /* Mostrar menú hamburguesa en móviles */
+    }
+    
     .nav-buttons {
-        flex-direction: row;
+        display: none; /* Ocultar botones en móviles */
+        flex-direction: column;
         justify-content: space-between;
+        width: 100%; /* Asegurar que el contenedor del menú ocupe toda la anchura */
+    }
+    
+    .nav-buttons.show {
+        display: flex; /* Mostrar botones cuando el menú hamburguesa esté activo */
+        max-height: 200px;
+        transition: max-height 0.5s ease-in;
     }
 
     .nav-buttons button {
-        margin: 5px;
+        margin: 5px 0;
         padding: 10px;
-        flex-grow: 0;
-        flex-shrink: 1;
+        flex-grow: 1;
+        width: 100%; /* Asegurar que los botones ocupen toda la anchura */
     }
 }
-
 /*fin header*/
 
 
