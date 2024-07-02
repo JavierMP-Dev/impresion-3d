@@ -25,56 +25,57 @@ body {
     background-color: #06405190;
     color: white;
 }
-.header .page-name {
-    font-size: 24px;
-}
-.header .nav-buttons {
-    display: flex;
-}
-.header .nav-buttons button {
-    margin-left: 10px;
-    padding: 10px 15px;
-    border: none;
-    background-color: #444;
-    color: white;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-.header .nav-buttons button:hover {
-    background-color: #555;
-}
+
 .menu-icon {
-    display: none;
-    font-size: 24px;
     cursor: pointer;
+    font-size: 24px;
 }
+
 .nav-buttons {
-    display: flex;
+    display: none;
+    flex-direction: column;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s ease-out;
 }
-@media (max-width: 768px) {
-    .nav-buttons {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        background-color: #333;
-    }
-    .nav-buttons button {
-        width: 100%;
-        margin: 0;
-        text-align: left;
-        padding: 15px;
-    }
-    .menu-icon {
-        display: block;
-    }
-}
+
 .nav-buttons.show {
     display: flex;
+    max-height: 200px; /* Adjust this value as needed */
+    transition: max-height 0.5s ease-in;
 }
+
+.nav-buttons button {
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px 0;
+    cursor: pointer;
+    flex-grow: 1;
+}
+
+.nav-buttons button:hover {
+    background-color: #555;
+}
+
+/* Estilos para vista móvil */
+@media (max-width: 600px) {
+    .nav-buttons {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .nav-buttons button {
+        margin: 5px;
+        padding: 10px;
+        flex-grow: 0;
+        flex-shrink: 1;
+    }
+}
+
 /*fin header*/
+
 
 .background {
     width: 100%;
@@ -147,6 +148,7 @@ body {
 }
 
 /*codigo de header*/
+
 footer {
     background-color: #06405190;
     color: #fff;
