@@ -1,6 +1,7 @@
 :root {
     --primary: #DD946F ;
     --secondary: #261E5A;
+    --absolut-dark: #000000 ;
 }
 
 * {
@@ -305,8 +306,7 @@ footer {
   .form .submit {
     padding: 1rem 0.75rem;
     width: 100%;
-    display: flex;
-    align-items: center;
+    
     gap: 0.5rem;
     border-radius: 3rem;
     background-color: var(--bg-dark);
@@ -320,7 +320,7 @@ footer {
   
   .form .submit:hover {
     background-color: var(--clr);
-    color: var(--bg-dark);
+    color: var(--absolut-dark);
   }
   
   .span {
