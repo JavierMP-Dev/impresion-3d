@@ -1,296 +1,251 @@
 <!DOCTYPE html>
 <html lang="zxx">
-    <head>
-        <meta charset="UTF-8">
-        <title>Soluciones 3D</title>
-        <meta 
-            name="viewport"
-            content="width=device-width, initial-scale=1.0"
-        >
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link
-            href="https://fonts.googleapis.com/css2?family=Mulish&display=swap"
-            rel="stylesheet"
-            type='text/css'
-        >
-        <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="logo.jpeg"  type="image/x-icon" />
-    
-        
-    </head>
-    <body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Soluciones 3D</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish&display=swap"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="logo.jpeg" type="image/x-icon" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="page-name">
+        <img class="logo_p" src="logo.jpeg" alt="" /> &nbsp; Soluciones 3D
+      </div>
+      <div class="menu-icon" onclick="toggleMenu()">☰</div>
+      <div class="nav-buttons" id="navButtons">
+        <button href="#llaveros">LLaveros</button>
+        <button href="#macetas">Macetas</button>
+        <button href="#artilugios">Artilugios</button>
+      </div>
+    </header>
 
-        <header class="header">
-            <div class="page-name"><img class="logo_p" src="logo.jpeg" alt=""> &nbsp; Soluciones 3D</div>
-            <div class="menu-icon" onclick="toggleMenu()">☰</div>
-            <div class="nav-buttons" id="navButtons">
-                <button href="#llaveros" >LLaveros.</button>
-                <button href="#macetas">Macetas.</button>
-                <button href="#artilugios">Artilugios.</button>
+    <script>
+      function toggleMenu() {
+        var navButtons = document.getElementById("navButtons");
+        navButtons.classList.toggle("show");
+      }
+    </script>
+
+    <br/>
+
+    <div class="background">
+      <div class="centering">
+        <div class="articles">
+          <article>
+            <figure>
+              <img src="img/tubo.jpg" alt="Imagen 1" />
+            </figure>
+            <div class="article-preview">
+              <h2 id="llaveros">Llavero de tubo</h2>
+              <p>
+                Llaveros con forma del tubos del iconico juego de Mario Bros.
+                <a href="#" class="read-more" title="Read More"> </a>
+              </p>
             </div>
-        </header>
-    
-        <script>
-            function toggleMenu() {
-                var navButtons = document.getElementById("navButtons");
-                navButtons.classList.toggle("show");
-            }
-        </script>
-    
-        <br>
+          </article>
+          <article>
+            <figure>
+              <img src="img/keepSD.jpg" alt="Guarda micro SD" />
+            </figure>
+            <div class="article-preview">
+              <h2>Guarda micro SD</h2>
+              <p>
+                Case rigido para proteger memorias tipo micro SD en los viajes.
+              </p>
+            </div>
+          </article>
+          <article>
+            <figure>
+              <img src="img/caldero.jpg" alt="caldero" />
+            </figure>
+            <div class="article-preview">
+              <h2>LLavero de caldero</h2>
+              <p>LLavero en forma de caldero de bruja de Harry potter,</p>
+            </div>
+          </article>
+          <article>
+            <figure>
+              <img src="img/pika.jpg" alt="Preview" />
+            </figure>
+            <div class="article-preview">
+              <h2>Figuras pokemon</h2>
+              <p>
+                Impresion de diferentes tipos de figuras como personajes de
+                anime.
+              </p>
+            </div>
+          </article>
+          <article>
+            <figure>
+              <img src="img/maceta.jpg" alt="Preview" />
+            </figure>
+            <div class="article-preview">
+              <h2 id="macetas">Macetas</h2>
+              <p>
+                Macetas de figuras irregulares, perfectas como piezas
+                decorativas.
+              </p>
+            </div>
+          </article>
+          <article>
+            <figure>
+              <img src="img/flork.jpg" alt="Preview" />
+            </figure>
+            <div class="article-preview">
+              <h2>Llaveros flork</h2>
+              <p>
+                Ideales para acompañar tus llaves y darles un toque
+                personalizado.
+              </p>
+            </div>
+          </article>
 
-        <div class="background">
-            <div class="centering">
-                <div class="articles">
-                    <article>
-                        <figure>
-                            <img src="img/tubo.jpg" alt="Imagen 1">
-                                   
-                            
-                        </figure>
-                        <div class="article-preview">
-                            <h2 id="llaveros">Llavero de tubo</h2>
-                            <p>Llaveros con forma del tubos del iconico juego de Mario Bros.
-                                <a href="#" class="read-more" title="Read More">
-                                    
-                                </a>
-                            </p>
-                        </div>
-                    </article>
-                    <article>            
-                        <figure>
-                            <img
-                                src="img/keepSD.jpg"
-                                alt="Guarda micro SD"
-                            >
-                        </figure>
-                        <div class="article-preview">
-                            <h2>Guarda micro SD</h2>
-                            <p>
-                                Case rigido para proteger memorias tipo micro SD en los viajes. 
-                                
-                            </p>
-                        </div>
-                    </article>
-                    <article>
-                        <figure>
-                            <img
-                                src="img/caldero.jpg"
-                                alt="caldero"
-                            >
-                        </figure>
-                        <div class="article-preview">
-                            <h2>LLavero de caldero</h2>
-                            <p>
-                                LLavero en forma de caldero de bruja de Harry potter,  
+          <article>
+            <figure>
+              <img src="img/maceta_calabaza.jpg" alt="Preview" />
+            </figure>
+            <div class="article-preview">
+              <h2>Maceta de calabaza</h2>
+              <p>Maceta en forma de calabaza, pequeña.</p>
+            </div>
+          </article>
 
-                                
-                            </p>
-                        </div>
-                    </article>
-                    <article>
-                        <figure>
-                            <img
-                                src="img/pika.jpg"
-                                alt="Preview"
-                            >
-                        </figure>
-                        <div class="article-preview">
-                            <h2>Figuras pokemon</h2>
-                            <p>
-                               
-                                Impresion de diferentes tipos de figuras como personajes de anime.
-                            </p>
-                        </div>
-                    </article>
-                    <article>            
-                        <figure>
-                            <img
-                                src="img/maceta.jpg"
-                                alt="Preview"
-                            >
-                        </figure>
-                        <div class="article-preview">
-                            <h2 id="macetas">Macetas</h2>
-                            <p>
-                                Macetas de figuras irregulares, perfectas como piezas decorativas.
-                            </p>
-                        </div>
-                    </article>
-                    <article>
-                        <figure>
-                            <img
-                                src="img/flork.jpg"
-                                alt="Preview"
-                            >
-                        </figure>
-                        <div class="article-preview">
-                            <h2>Llaveros flork</h2>
-                            <p>
-                                Ideales para acompañar tus llaves y darles un toque personalizado.
-                            </p>
-                        </div>
-                    </article>
+          <article>
+            <figure>
+              <img src="img/disco.jpg" alt="Preview" />
+            </figure>
+            <div class="article-preview">
+              <h2>Case disco duro</h2>
+              <p>Case para resguardar un disco duro, hecho en PLA amarillo.</p>
+            </div>
+          </article>
 
-                    <article>
-                        <figure>
-                            <img
-                                src="img/maceta_calabaza.jpg"
-                                alt="Preview"
-                            >
-                        </figure>
-                        <div class="article-preview">
-                            <h2>Maceta de calabaza</h2>
-                            <p>
-                                Maceta en forma de calabaza, pequeña.
-                            </p>
-                        </div>
-                    </article>
+          <article>
+            <figure>
+              <img src="img/cuelga.jpg" alt="Preview" />
+            </figure>
+            <div class="article-preview">
+              <h2>Cuelga llaves</h2>
+              <p>
+                Cuelga llaves tipo Puzzle, para pared hechos en diferentes
+                colores.
+              </p>
+            </div>
+          </article>
 
-                    <article>            
-                        <figure>
-                            <img
-                                src="img/disco.jpg"
-                                alt="Preview"
-                            >
-                        </figure>
-                        <div class="article-preview">
-                            <h2>Case disco duro</h2>
-                            <p>
-                                Case para resguardar un disco duro, hecho en PLA amarillo.
-                            </p>
-                        </div>
-                    </article>
+          <article>
+            <figure>
+              <img src="img/mosque.jpg" alt="Preview" />
+            </figure>
+            <div class="article-preview">
+              <h2 id="mosqueton">Mosqueton</h2>
+              <p>Funcional para organizar las llaves o diferentes objetos.</p>
+            </div>
+          </article>
 
-                    <article>
-                        <figure>
-                            <img
-                                src="img/cuelga.jpg"
-                                alt="Preview"
-                            >
-                        </figure>
-                        <div class="article-preview">
-                            <h2>Cuelga llaves</h2>
-                            <p>
-                               Cuelga llaves tipo Puzzle, para pared hechos en diferentes colores.
-                            </p>
-                        </div>
-                    </article>
+          <article>
+            <figure>
+              <img src="img/spoty.jpg" alt="Preview" />
+            </figure>
+            <div class="article-preview">
+              <h2>LLavero personalizado</h2>
+              <p>
+                Hacemos el llavero con la cancion de tu preferencia con un
+                mensaje corto.
+              </p>
+            </div>
+          </article>
 
-
-                    <article>
-                        <figure>
-                            <img
-                                src="img/mosque.jpg"
-                                alt="Preview"
-                            >
-                        </figure>
-                        <div class="article-preview">
-                            <h2 id="mosqueton">Mosqueton</h2>
-                            <p>
-                                Funcional para organizar las llaves o diferentes objetos.
-                            </p>
-                        </div>
-                    </article>
-
-                    <article>            
-                        <figure>
-                            <img
-                                src="img/spoty.jpg"
-                                alt="Preview"
-                            >
-                        </figure>
-                        <div class="article-preview">
-                            <h2>LLavero personalizado</h2>
-                            <p>
-                                Hacemos el llavero con la cancion de tu preferencia con un mensaje corto.
-                            </p>
-                        </div>
-                    </article>
-
-                    <article>
-                        <figure>
-                            <div class="carousel">
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <img src="img/keycaps.jpg" alt="Imagen 1">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="img/key.jpg" alt="Imagen 2">
-                                    </div>
-                                    
-                                </div>
-                                <a class="carousel-control prev" onclick="prevSlide()">&#10094;</a>
-                                <a class="carousel-control next" onclick="nextSlide()">&#10095;</a>
-                            </div>
-                        </figure>
-                        <div class="article-preview">
-                            <h2>Keycaps teclado</h2>
-                            <p>
-                            Keycaps compatibles con diferentes tipos de switch de teclado mecanico.  
-                            </p>
-                        </div>
-                    </article>
-
+          <article>
+            <figure>
+              <div class="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="img/keycaps.jpg" alt="Imagen 1" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/key.jpg" alt="Imagen 2" />
+                  </div>
                 </div>
+                <a class="carousel-control prev" onclick="prevSlide()"
+                  >&#10094;</a
+                >
+                <a class="carousel-control next" onclick="nextSlide()"
+                  >&#10095;</a
+                >
+              </div>
+            </figure>
+            <div class="article-preview">
+              <h2>Keycaps teclado</h2>
+              <p>
+                Keycaps compatibles con diferentes tipos de switch de teclado
+                mecanico.
+              </p>
             </div>
+          </article>
         </div>
+      </div>
+    </div>
 
-        <!-- Footer -->
+    <!-- Footer -->
     <footer>
-        <div class="footer-container">
-            <div class="footer-section">
-                <h5>Soluciones 3D</h5>
-                <p>Diseños personalizados.</p>
-            </div>
-            <div class="footer-section">
-                <h5>Secciones</h5>
-                <ul>
-                    <li><a href="#">Acerca de</a></li>
-                    <li><a href="#">Contacto</a></li>
-                    <li><a href="#">Política de Privacidad</a></li>
-                    <li><a href="#">Términos de Servicio</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h5>Síguenos</h5>
-                <ul>
-                    <li><a href="https://www.facebook.com/people/Impresiones-y-soluciones-3D/61559085353114/?mibextid=ZbWKwL">Facebook</a></li>
-                    <li><a href="#">Instagram</a></li>
-                    
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h5>Cotiza ya!!!</h5>
-                <!-- modify this form HTML and place wherever you want your form -->
-<form
-action="https://formspree.io/f/xqazkzzv"
-method="POST" class="form"
->
-<span class="input-span">
-    <label class="label">Correo</label>
-        <input type="email" name="email">
-</span>
-
-
-<!-- your other form fields go here -->
-<button type="submit" class="submit">Enviar</button>
-</form>
-            </div>
+      <div class="footer-container">
+        <div class="footer-section">
+          <h5>Soluciones 3D</h5>
+          <p>Diseños personalizados.</p>
         </div>
-        <div class="footer-bottom">
-            <small>&copy; 2022 Soluciones 3D. Todos los derechos reservados.</small>
+        <div class="footer-section">
+          <h5>Secciones</h5>
+          <ul>
+            <li><a href="#">Acerca de</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li><a href="#">Política de Privacidad</a></li>
+            <li><a href="#">Términos de Servicio</a></li>
+          </ul>
         </div>
+        <div class="footer-section">
+          <h5>Síguenos</h5>
+          <ul>
+            <li>
+              <a
+                href="https://www.facebook.com/people/Impresiones-y-soluciones-3D/61559085353114/?mibextid=ZbWKwL"
+              >
+              </a>
+            </li>
+            <li><a href="#">Instagram</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h5>Cotiza ya!!!</h5>
+          <!-- modify this form HTML and place wherever you want your form -->
+          <form
+            action="https://formspree.io/f/xqazkzzv"
+            method="POST"
+            class="form"
+          >
+            <span class="input-span">
+              <label class="label">Correo</label>
+              <input type="email" name="email" />
+            </span>
+
+            <!-- your other form fields go here -->
+            <button type="submit" class="submit">Enviar</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <small>&copy; 2022 Soluciones 3D. Todos los derechos reservados.</small>
+      </div>
     </footer>
 
-
-
     <script src="carrousel.js"></script>
-    
-    </body>
+  </body>
 </html>
-
-
-
-

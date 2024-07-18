@@ -23,6 +23,7 @@ body {
     width: 60px;
     height: auto;
     border-radius: 50%;
+    cursor: pointer;
 }
 .page-name{
     display: flex;
