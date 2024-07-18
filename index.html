@@ -15,17 +15,38 @@
     <link rel="shortcut icon" href="logo.jpeg" type="image/x-icon" />
   </head>
   <body>
-    <header class="header">
-      <div class="page-name">
-        <img class="logo_p" src="logo.jpeg" alt="" /> &nbsp; Soluciones 3D
+    <div class="menu__wrapper">
+      <div class="menu__bar">
+          <a
+              href="#"
+              title="Logo"
+          >
+              <img
+                  class="logo"
+                  src="assets/atheros_learning_logo.png"
+                  title='Logo'
+                  alt='Logo'
+              >
+          </a>
+          <img
+              class="menu-icon"
+              src="assets/burger-menu.svg"
+              title='Burger Menu'
+              alt='Burger Menu'
+              onclick="toggleMenu(this)"
+          >
+          <ul class="navigation">
+              <li>Platform</li>
+              <li>Blog</li>
+              <li>About</li>
+              <li>Contact Us</li>
+          </ul>
       </div>
-      <div class="menu-icon" onclick="toggleMenu()">☰</div>
-      <div class="nav-buttons" id="navButtons">
-        <button href="#llaveros">LLaveros</button>
-        <button href="#macetas">Macetas</button>
-        <button href="#artilugios">Artilugios</button>
-      </div>
-    </header>
+  </div>
+  <script src="script.js"></script>
+
+  <script src="script_menu.js"></script>
+
 
     <script>
       function toggleMenu() {
