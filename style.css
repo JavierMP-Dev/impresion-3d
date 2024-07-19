@@ -1,6 +1,6 @@
 :root {
     --primary: #DD946F ;
-    --secondary1: #261E5A;
+    --secondary1: #000000ba;
     --absolut-dark: #000000 ;
 }
 
@@ -358,7 +358,7 @@ footer {
     display: block;
     width: 100vw;
     height: 100vh;
-    background-image: url(assets/universe.jpg);
+   background-image: url(assets/universe.jpg);
    /* opacity: 0.5;*/
     z-index: -1;
     background-size: cover;
