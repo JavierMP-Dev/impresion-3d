@@ -29,9 +29,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
- 
-
+    cursor: pointer;
 }
+
+.page-name:hover{
+    color: #19cc9f;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
