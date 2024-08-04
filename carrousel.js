@@ -25,5 +25,5 @@ function prevSlide() {
     showSlide(currentSlide - 1);
 }
 
-// Initialize the carousel
+// Iniciando el carrusel
 showSlide(currentSlide);
