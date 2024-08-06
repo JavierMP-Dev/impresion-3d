@@ -1,6 +1,6 @@
 :root {
     --primary: #DD946F ;
-    --secondary: #261E5A;
+    --secondary1: #000000ba;
     --absolut-dark: #000000 ;
 }
 
@@ -11,7 +11,7 @@
 }
 
 body {
-    background-color: var(--secondary);
+    background-color: var(--secondary1);
     font-family: Mulish;
     font-size: 16px;
 }
@@ -114,6 +114,8 @@ body {
     justify-content: center;
     max-width: 75rem;
     gap: 1.5rem;
+    margin-top: 6rem;
+    padding-bottom: 3rem;
 }
  
 .articles article {
@@ -136,7 +138,7 @@ body {
 .articles article h2 {
     margin: 0 0 1rem 0;
     font-size: 1.6rem;
-    color: var(--secondary);
+    color: var(--secondary1);
     transition: color 0.3s ease-out;
 }
   
@@ -337,3 +339,181 @@ footer {
     color: var(--clr);
   }
   
+/*barra de navegacion inicio*/
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+:root {
+    --primary: #FF9950; ;
+    --primary-hover: #CD7D7C;                
+    --secondary: #EFD0F8;
+    --secondary-hover: #B8A1D9;
+    --aura: #9265CA80;
+    --background: #06405190;
+    --navbar-height: 3.75rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Mulish, sans-serif;
+}
+
+.background {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+   background-image: url(assets/universe.jpg);
+   /* opacity: 0.5;*/
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.menu__wrapper {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    z-index: 2;
+}
+
+.menu__bar {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding-right: 1.5rem;
+    gap: 2rem;
+    background-color: var(--background);
+    height: 3.75rem;
+}
+
+.menu-icon {
+    cursor: pointer;
+    display: flex;
+}
+
+.navigation {    
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 1.5rem;
+    padding: 0;
+    background-color: var(--background);
+}
+
+.logo {
+    margin-left: 1rem;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    isolation: isolate;
+}
+
+@keyframes fade {
+    0% { opacity: 0 }
+    100% { opacity: 1 }
+}
+                    
+.navigation > li {
+  display: flex;
+  position: relative;
+  padding: 0;
+  color: white;
+  cursor: pointer;
+  width: max-content;
+  transition: all 0.2s;
+}
+
+.navigation > li:hover {
+    color: var(--primary)
+}
+
+.navigation > li::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 0.125rem;
+  bottom: -0.3rem;
+  left: 0;
+  background: linear-gradient(90deg, var(--background), var(--primary), var(--background));
+  transform-origin: bottom center;
+  transition: transform 0.3s ease-out;
+}
+
+.navigation > li:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom center;
+}
+
+@media (min-width: 600px) {
+    .menu-icon {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .navigation {
+        display: none;
+    }
+    .menu-icon {
+        display: block;
+    }
+
+    .navigation--mobile {
+        top: var(--navbar-height);
+        position: absolute;
+        display: flex;
+        padding: 1.25rem;
+        background-color: var(--background);
+        width: 100%;
+        height: calc(100vh - var(--navbar-height));
+        gap: 0.5rem;
+        flex-direction: column;
+        animation: fade 1s ease-in 1 forwards;
+    }
+}
+/*barra de navegacion*/
+
+
+/*footer*/
+
+
+/*fondo*/
+/* From Uiverse.io by Cybercom682 */ 
+.container {
+    width: 100%;
+    height: 100%;
+    --color: rgba(0, 115, 19, 0.3);
+    background-color: #191a1a;
+    background-image: linear-gradient(
+        180deg,
+        transparent 24%,
+        var(--color) 25%,
+        var(--color) 26%,
+        transparent 27%,
+        transparent 74%,
+        var(--color) 75%,
+        var(--color) 76%,
+        transparent 77%,
+        transparent
+      ),
+      linear-gradient(
+        45deg,
+        transparent 24%,
+        var(--color) 35%,
+        var(--color) 26%,
+        transparent 17%,
+        transparent 74%,
+        var(--color) 75%,
+        var(--color) 76%,
+        transparent 77%,
+        transparent
+      );
+    background-size: 55px 55px;
+  }
+/*fin fondo*/  

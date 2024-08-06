@@ -14,18 +14,39 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="logo.jpeg" type="image/x-icon" />
   </head>
-  <body>
-    <header class="header">
-      <div class="page-name">
-        <img class="logo_p" src="logo.jpeg" alt="" /> &nbsp; Soluciones 3D
+  <body class="container">
+    <div class="menu__wrapper">
+      <div class="menu__bar">
+          <a
+              href="#"
+              title="Logo"
+          >
+              <img
+                  class="logo_p"
+                  src="logo.jpeg"
+                  title='Logo'
+                  alt='Logo'
+              >
+          </a>
+          <img
+              class="menu-icon"
+              src="assets/burger-menu.svg"
+              title='Burger Menu'
+              alt='Burger Menu'
+              onclick="toggleMenu(this)"
+          >
+          <ul class="navigation">
+              <li>Inicio</li>
+              <li>LLaveros</li>
+              <li>Macetas</li>
+              <li>Keepers</li>
+          </ul>
       </div>
-      <div class="menu-icon" onclick="toggleMenu()">☰</div>
-      <div class="nav-buttons" id="navButtons">
-        <button href="#llaveros">LLaveros</button>
-        <button href="#macetas">Macetas</button>
-        <button href="#artilugios">Artilugios</button>
-      </div>
-    </header>
+  </div>
+  <script src="script.js"></script>
+
+  <script src="script_menu.js"></script>
+
 
     <script>
       function toggleMenu() {
@@ -34,9 +55,9 @@
       }
     </script>
 
-    <br/>
+    
 
-    <div class="background">
+    <div class="">
       <div class="centering">
         <div class="articles">
           <article>
@@ -156,7 +177,7 @@
               <img src="img/spoty.jpg" alt="spotify song" />
             </figure>
             <div class="article-preview">
-              <h2>LLaveros personalizado</h2>
+              <h2>LLaveros </h2>
               <p>
                 Hacemos el llavero con la cancion de tu preferencia con un
                 mensaje corto.
@@ -195,6 +216,7 @@
       </div>
     </div>
 
+   
     <!-- Footer -->
     <footer>
       <div class="footer-container">
