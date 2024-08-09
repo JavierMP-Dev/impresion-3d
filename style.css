@@ -20,10 +20,12 @@ body {
 
 /*clase logo*/
 .logo_p{
-    width: 60px;
+    width:70px;
     height: auto;
     border-radius: 50%;
     cursor: pointer;
+    margin: 1rem;
+    margin-top: 1rem;
 }
 .page-name{
     display: flex;
@@ -388,7 +390,7 @@ footer {
     padding-right: 1.5rem;
     gap: 2rem;
     background-color: var(--background);
-    height: 3.75rem;
+    height: 5rem;
 }
 
 .menu-icon {
