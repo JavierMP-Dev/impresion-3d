@@ -13,6 +13,8 @@
     />
     <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="logo.jpeg" type="image/x-icon" />
+    <!----Link para animacion de paginas-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   </head>
   <body class="container">
@@ -37,10 +39,10 @@
               onclick="toggleMenu(this)"
           >
           <ul class="navigation">
-              <li>Inicio</li>
+              <a href="#inicio"><li >Inicio</li></a>
               <li>LLaveros</li>
               <li>Macetas</li>
-              <li>Keepers</li>
+              <a href="#cotiza"><li >Cotiza</li></a>
           </ul>
       </div>
   </div>
@@ -58,27 +60,28 @@
 
     
 
-    <div class="">
+    <div >
       <div class="centering">
-        <div class="articles">
-          <article>
-            <figure>
-              <img src="img/tubo.jpg" alt="Imagen 1" />
-            </figure>
-            <div class="article-preview">
-              <h2 id="llaveros">Llavero Mario</h2>
-              <p>
-                Llaveros con forma del tubos del iconico juego Mario Bros.
-                <a href="#" class="read-more" title="Read More"> </a>
-                
-                
-                
-              </p>
+        <div class="articles" >
+          
+         
+            <article>
+              <figure>
+                <img src="img/tubo.jpg" alt="Imagen 1" />
+              </figure>
+              <div id="inicio" class="article-preview">
+                <h2 >Llavero Mario</h2>
+                <p>
+                  Llaveros con forma del tubos del iconico juego Mario Bros.
+                  <a href="#" class="read-more" title="Read More"> </a>
+          
+                </p>
+              </div>
+            </article>
 
+          
 
-
-            </div>
-          </article>
+          
 
 
           
@@ -254,7 +257,7 @@
 
    
     <!-- Footer -->
-    <footer>
+    <footer id="cotiza">
       <div class="footer-container">
         <div class="footer-section">
           <h5>Soluciones 3D</h5>
@@ -309,5 +312,9 @@
     </footer>
 
     <script src="carrousel.js"></script>
+
+    <!--Scrip de animacion de paginas-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
   </body>
 </html>
