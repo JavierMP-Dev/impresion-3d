@@ -26,7 +26,13 @@ body {
     cursor: pointer;
     margin: 1rem;
     margin-top: 1rem;
+    transition: transform 3s ease-in-out; /* Aumenta la duración a 3 segundos */
 }
+
+.logo_p:hover {
+    transform: rotate(360deg); /* Gira el logo 360 grados */
+}
+
 .page-name{
     display: flex;
     justify-content: center;
@@ -404,7 +410,7 @@ footer {
     list-style-type: none;
     gap: 1.5rem;
     padding: 0;
-    background-color: var(--background);
+  
 }
 
 .logo {
@@ -414,6 +420,8 @@ footer {
     cursor: pointer;
     isolation: isolate;
 }
+
+
 
 @keyframes fade {
     0% { opacity: 0 }
