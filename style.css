@@ -433,6 +433,9 @@ footer {
 .navigation > li:hover {
     color: var(--primary)
 }
+.navigation > a:hover {
+    color: var(--primary)
+}
 
 .navigation > li::after {
   content: '';
@@ -446,11 +449,28 @@ footer {
   transform-origin: bottom center;
   transition: transform 0.3s ease-out;
 }
+.navigation > a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 0.125rem;
+    bottom: -0.3rem;
+    left: 0;
+    background: linear-gradient(90deg, var(--background), var(--primary), var(--background));
+    transform-origin: bottom center;
+    transition: transform 0.3s ease-out;
+  }
 
 .navigation > li:hover::after {
   transform: scaleX(1);
   transform-origin: bottom center;
 }
+
+.navigation > a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom center;
+  }
 
 @media (min-width: 600px) {
     .menu-icon {
@@ -519,3 +539,10 @@ footer {
     background-size: 55px 55px;
   }
 /*fin fondo*/  
+
+/*letras nav head*/
+.letras_nav{
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}
