@@ -557,7 +557,7 @@ footer {
 .modal-content {
   margin: auto;
   display: block;
-  width: 65%; /*Tamaño de la imagen que se va mostrar*/
+  width: 55%; /*Tamaño de la imagen que se va mostrar*/
   max-width: 800px;
   animation: zoom 0.3s;
 }
